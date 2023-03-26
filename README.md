@@ -1,1 +1,1 @@
-# loloman333.github.io
+# Cease to exist
