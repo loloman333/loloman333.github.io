@@ -70,7 +70,6 @@ collections:
 navbar-links:
   Posts: "posts"
   Projects: "projects"
-  Links: "links"
   Contact: "contact"
 
 # --- Logo
