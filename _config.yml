@@ -74,7 +74,12 @@ author: Lorenz Killer
 
 # --- Collections
 collections:
-  - projects
+  projects:
+    output: true
+    permalink: /:collection/:name
+  posts:
+    output: true
+    permalink: /:collection/:name
 
 # --- Navigation bar
 navbar-links:
