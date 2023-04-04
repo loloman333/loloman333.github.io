@@ -39,7 +39,7 @@ title: 'Tag Index'
 
 {% for project in site.projects %}
   <h2>
-    <a href="{{ staff_member.url }}"> {{ project.name }} </a>
+    <a href="{{ project.url }}"> {{ project.name }} </a>
   </h2>
   <p>{{ project.content | markdownify }}</p>
 {% endfor %}
