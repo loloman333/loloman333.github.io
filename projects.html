@@ -3,37 +3,15 @@ layout: page
 title: 'Projects'
 ---
 
-<!-- "Hacked" in some additional styling -->
+<!-- "Hacked" in some additional styling TODO: move to right file, rename classes and optimize for mobile-->
 <style>
-  /*
-  .post-bg {
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .post-preview {
-    border: 0.1rem solid #808080; 
-    border-radius: 1rem; 
-    padding: 0.25rem;
-    margin: 0.5rem;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .post-preview-content {
-    position: relative;
-  }*/
-
   .post-preview {
     position: relative;
     border: 0.1rem solid #808080; 
     border-radius: 0.5rem; 
     margin: 1rem;
     overflow: hidden;
+    padding-left: 1rem;
   }
 
   .post-preview:last-child {
@@ -65,7 +43,7 @@ title: 'Projects'
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
-  {% for post in site.projects %}  <!-- Copied code from home layout which shows posts by default and was too lazy to refactor :) -->
+  {% for post in site.projects %}  <!-- Copied code from home layout which shows posts by default and was too lazy to refactor :)  TODO -->
   <li class="post-preview" style="--bg-var: url({{ post.bg-img }});">
     <article class="post-preview-content" > 
 
@@ -125,7 +103,7 @@ title: 'Projects'
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+          <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a> <!-- TODO remove Read More ???-->
         {% endif %}
       </div>
       {% endunless %}
