@@ -41,7 +41,7 @@ title: 'Projects'
     width: 100%;
     height: 100%;
     opacity: 0.6;
-    background-image: url(''); /* TODO: Add default img*/
+    background-image: var(--bg-var);  /* TODO: Add default img*/
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -58,7 +58,7 @@ title: 'Projects'
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
   {% for post in site.projects %}  <!-- Copied code from home layout which shows posts by default and was too lazy to refactor :) -->
-  <li class="post-preview" style="background-image: url('{{ post.bg-img }}');" >
+  <li class="post-preview" style="--bg-var: url({{ post.bg-img }});">
     <article class="post-preview-content" > 
 
       {%- capture thumbnail -%}
