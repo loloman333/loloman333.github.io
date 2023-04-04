@@ -33,6 +33,7 @@ plugins:
 collections:
   projects:
     output: true
+    permalink: /:collection/:name
   posts:
     output: true
     permalink: /:collection/:name
