@@ -28,6 +28,11 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  
+  
+collections:
+  projects:
+    - output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
