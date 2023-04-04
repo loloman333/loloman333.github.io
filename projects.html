@@ -5,6 +5,7 @@ title: 'Tag Index'
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
+<!-- 
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
@@ -34,3 +35,11 @@ title: 'Tag Index'
     </div>
 {%- endfor -%}
 </div>
+-->
+
+{% for project in site.projects %}
+  <h2>
+    <a href="{{ staff_member.url }}"> {{ project.name }} </a>
+  </h2>
+  <p>{{ project.content | markdownify }}</p>
+{% endfor %}
