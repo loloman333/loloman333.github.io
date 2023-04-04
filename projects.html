@@ -3,27 +3,16 @@ layout: page
 title: 'Projects'
 ---
 
+<!-- "Hacked" in some additional styling -->
 <style>
-  .project-preview { 
-    border: 0.1rem solid #808080; 
-    border-radius: 1rem; 
-    padding: 0.25rem; 
-  }
-
-  .project-preview:before {
-    content: ' ';
-    display: block;
+  .post-bg {
+    opacity: 0.6;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background-image: url('{{ post.bg-img }}');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  }  
+    height: auto;
+  } 
 </style>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -32,7 +21,12 @@ title: 'Projects'
 <ul class="posts-list list-unstyled" role="list">
   {% for post in site.projects %}  <!-- Copied code from home layout which shows posts by default and was too lazy to refactor :) -->
   <li class="post-preview">
-    <article class="project-preview" > <!-- "Hacked" in some additional styling -->
+    <img
+      class="post-bg"
+      src="{{ post.bg-img }}"
+      alt=""
+    >
+    <article class="post-preview" > 
 
       {%- capture thumbnail -%}
         {% if post.thumbnail-img %}
