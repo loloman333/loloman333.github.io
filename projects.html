@@ -13,6 +13,16 @@ title: 'Projects'
     width: 100%;
     height: auto;
   } 
+
+  .post-preview {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .post-preview-content {
+    position: relative;
+}
+
 </style>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -26,7 +36,7 @@ title: 'Projects'
       src="{{ post.bg-img }}"
       alt=""
     >
-    <article class="post-preview" > 
+    <article class="post-preview-content" > 
 
       {%- capture thumbnail -%}
         {% if post.thumbnail-img %}
