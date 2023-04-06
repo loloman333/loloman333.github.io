@@ -85,7 +85,7 @@ collections:
 navbar-links:
   Posts: "posts"
   Projects: "projects"
-  Contact: "contact"
+  About: "about"
 
 # --- Logo
 # Image to show in the navigation bar - works best with a square image
@@ -99,12 +99,23 @@ round-avatar: true
 # then specify the following parameter
 # title-img: "/assets/img/lolo.png"
 
+
+contact-form-links:
+  email: mailto:contact@lolo.place
+  github: github.com/loloman333
+  youtube: youtube.com/lolomann25
+  reddit: reddit.com/u/loloman333
+  spotify: spotify.com/loloman333
+  # TODO: linked in
+  instagram: instagram.com/loloman333
+  minecraft: planetminecraft.com/loloman333
+
 # --- Footer social media links
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "lorenzkiller@lolo.place"
+  email: "contact@lolo.place"
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
   github: loloman333
