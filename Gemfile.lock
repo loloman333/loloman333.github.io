@@ -256,6 +256,7 @@ DEPENDENCIES
   github-pages (~> 228)
   http_parser.rb (~> 0.6.0)
   jekyll-paginate
+  jekyll-remote-theme
   jekyll-sitemap
   jemoji
   tzinfo (>= 1, < 3)

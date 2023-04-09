@@ -21,14 +21,13 @@
 url: https://lolo.place
 
 # Build settings
-#theme: beautiful-jekyll-theme
 remote_theme: daattali/beautiful-jekyll@5.0.0
 plugins:
-#  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-  
+  - jekyll-remote-theme
+#  - jekyll-feed
   
 collections:
   projects:
