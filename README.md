@@ -1,3 +1,7 @@
 # Lolo's Place
 
-## TODO:
+# TODO:
+
+- Finish "About" Page
+- Implement Project tags
+- Add Projects

@@ -28,14 +28,6 @@ plugins:
   - jekyll-sitemap
   - jemoji
 #  - jekyll-feed
-  
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:name
-  posts:
-    output: true
-    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -82,9 +74,9 @@ collections:
 
 # --- Navigation bar
 navbar-links:
-  Posts: "posts"
   Projects: "projects"
   About: "about"
+  Tags: "tags"
 
 # --- Logo
 # Image to show in the navigation bar - works best with a square image
