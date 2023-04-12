@@ -37,6 +37,16 @@ title: 'Projects'
     position: relative;
   }
 
+  .contrast-fix {
+    background: #e9e3c7;
+    width: fit-content;
+    padding: 0 0.5rem 0 0.5rem;
+    border-width: 0.1rem;
+    /*display: block;*/
+    border-style: dashed;
+    border-color: #4040408f;
+  }
+
 </style>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -72,7 +82,7 @@ title: 'Projects'
       {% endif %}
 
       <a href="{{ post.url | absolute_url }}">
-        <h2 class="post-title">{{ post.title | strip_html }}</h2>
+        <h2 class="post-title contrast-fix">{{ post.title | strip_html }}</h2>
 
         {% if post.subtitle %}
           <h3 class="post-subtitle">
@@ -98,7 +108,7 @@ title: 'Projects'
       </div>
       {% endif %}
 
-      <div class="post-entry">
+      <div class="post-entry contrast-fix">
         {% assign excerpt_length = site.excerpt_length | default: 50 %}
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
@@ -114,7 +124,7 @@ title: 'Projects'
         <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
         <ul class="d-inline list-inline" role="list">
           {% for tag in post.tags %}
-          <li class="list-inline-item">
+          <li class="list-inline-item contrast-fix">
             <a href="">{{- tag -}}</a> <!-- TODO: implement or remove or yougotme page?-->
           </li>
           {% endfor %}
