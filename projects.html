@@ -39,12 +39,23 @@ title: 'Projects'
 
   .contrast-fix {
     background: #e9e3c7;
-    width: fit-content;
+    width: fit-content !important;
     padding: 0 0.5rem 0 0.5rem;
-    border-width: 0.1rem;
     /*display: block;*/
+  }
+
+  .heading-fix {
+    border-width: 0.1rem;
     border-style: dashed;
     border-color: #4040408f;
+    border-radius: 0.2rem; 
+  }
+
+  .tags-fix {
+    border-width: 0.1rem;
+    border-style: dashed;
+    border-color: #4040408f;
+    border-radius: 0.2rem; 
   }
 
 </style>
@@ -119,12 +130,12 @@ title: 'Projects'
       {% endunless %}
 
       {% if site.feed_show_tags != false and post.tags.size > 0 %}
-      <div class="blog-tags">
+      <div class="blog-tags contrast-fix">
         <span>Tags:</span>
         <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
         <ul class="d-inline list-inline" role="list">
           {% for tag in post.tags %}
-          <li class="list-inline-item contrast-fix">
+          <li class="list-inline-item tags-fix">
             <a href="">{{- tag -}}</a> <!-- TODO: implement or remove or yougotme page?-->
           </li>
           {% endfor %}
