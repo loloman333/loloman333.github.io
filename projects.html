@@ -38,17 +38,15 @@ title: 'Projects'
   }
 
   .contrast-fix {
-    background: #e9e3c7;
+    background: #e9e3c7c2;
     width: fit-content !important;
     padding: 0 0.5rem 0 0.5rem;
-    /*display: block;*/
   }
 
   .heading-fix {
     border-width: 0.1rem;
-    border-style: dashed;
+    border-style: none none solid none;
     border-color: #4040408f;
-    border-radius: 0.2rem; 
   }
 
   .tags-fix {
@@ -56,6 +54,7 @@ title: 'Projects'
     border-style: dashed;
     border-color: #4040408f;
     border-radius: 0.2rem; 
+    padding: 0;
   }
 
 </style>
@@ -93,10 +92,10 @@ title: 'Projects'
       {% endif %}
 
       <a href="{{ post.url | absolute_url }}">
-        <h2 class="post-title contrast-fix">{{ post.title | strip_html }}</h2>
+        <h2 class="post-title contrast-fix heading-fix">{{ post.title | strip_html }}</h2>
 
         {% if post.subtitle %}
-          <h3 class="post-subtitle">
+          <h3 class="post-subtitle contrast-fix">
           {{ post.subtitle | strip_html }}
           </h3>
         {% endif %}
