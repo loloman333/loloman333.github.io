@@ -50,10 +50,6 @@ title: 'Projects'
     border-color: #4040408f;
   }
 
-  .tags-fix {
-    text-decoration: underline;
-  }
-
 </style>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -124,20 +120,6 @@ title: 'Projects'
         {% endif %}
       </div>
       {% endunless %}
-
-      {% if site.feed_show_tags != false and post.tags.size > 0 %}
-      <div class="blog-tags contrast-fix">
-        <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-        <ul class="d-inline list-inline" role="list">
-          {% for tag in post.tags %}
-          <li class="list-inline-item tags-fix">
-            <a href="">{{- tag -}}</a> <!-- TODO: implement or remove or yougotme page?-->
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
 
     </article>
   </li>
