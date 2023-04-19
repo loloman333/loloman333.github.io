@@ -6,4 +6,4 @@ featured: true
 bg-img: /assets/img/projects/test.gif
 ---
 
-What a mess!
+:eyes: Curious
