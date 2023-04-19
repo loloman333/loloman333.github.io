@@ -57,7 +57,7 @@ title: 'Projects'
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
-  {% for post in site.projects %}  <!-- Copied code from home layout which shows posts by default and was too lazy to refactor :)  TODO -->
+  {% for post in site.projects reversed %}  <!-- Copied code from home layout which shows posts by default and was too lazy to refactor :)  TODO -->
   <li class="post-preview" style="--bg-var: url({{ post.bg-img }});">
     <article class="post-preview-content" > 
 
