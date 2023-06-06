@@ -2,7 +2,7 @@
 title: "Q-Learning Implementation"
 date: 2023-01-02
 featured: true
-bg-img: TODO
+bg-img: /assets/img/projects/q_learning/bg.png
 caption: "Cart Pole & TORCS"
 ---
 
