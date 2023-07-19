@@ -81,7 +81,7 @@ navbar-links:
   Projects: "projects"
   Texts: "texts"
   About: "about"
-  Tags: "tags"
+#  Tags: "tags" # removed for now because inconsistent with texts and projects TODO: make projects and texts categories of posts instead???
 
 # --- Logo
 # Image to show in the navigation bar - works best with a square image
