@@ -1,36 +1,123 @@
 ---
 layout: page
-title: 'Tag Index'
+title: 'Projects'
 ---
+
+<!-- "Hacked" in some additional styling TODO: move to right file, rename classes and optimize for mobile-->
+<style>
+  .post-preview {
+    position: relative;
+    border: 0.1rem solid #808080; 
+    border-radius: 0.5rem; 
+    margin: 1rem;
+    overflow: hidden;
+    padding-left: 1rem;
+  }
+
+  .post-preview:last-child {
+    border-bottom: 0.1rem solid #808080;
+  }
+
+  .post-preview:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background-image: var(--bg-var);  /* TODO: Add default img*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .post-preview-content {
+    position: relative;
+    height: 6rem;
+  }
+
+  .contrast-fix {
+    background: #e9e3c7de;
+    width: fit-content !important;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 0.5rem 0.2rem;
+  }
+
+  .heading-fix {
+    border-width: 0.1rem;
+    border-style: none none solid none;
+    border-color: #4040408f;
+  }
+
+</style>
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+<ul class="posts-list list-unstyled" role="list">
+  {% for post in site.projects reversed %}  <!-- Copied code from home layout which shows posts by default and was too lazy to refactor :)  TODO -->
+  <li class="post-preview" style="--bg-var: url({{ post.bg-img }});">
+    <article class="post-preview-content" > 
 
-{%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
+      {%- capture thumbnail -%}
+        {% if post.thumbnail-img %}
+          {{ post.thumbnail-img }}
+        {% elsif post.cover-img %}
+          {% if post.cover-img.first %}
+            {{ post.cover-img[0].first.first }}
+          {% else %}
+            {{ post.cover-img }}
+          {% endif %}
+        {% else %}
+        {% endif %}
+      {% endcapture %}
+      {% assign thumbnail=thumbnail | strip %}
 
-<div id="full-tags-list">
-{%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                </div>
-            </div>
-        {%- endfor -%}
-    </div>
-{%- endfor -%}
-</div>
+      {% if site.feed_show_excerpt == false %}
+      {% if thumbnail != "" %}
+      <div class="post-image post-image-normal">
+        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+          <img src="{{ thumbnail | absolute_url }}" alt="Project thumbnail">
+        </a>
+      </div>
+      {% endif %}
+      {% endif %}
+
+      <a href="{{ post.url | absolute_url }}">
+        <h2 class="post-title contrast-fix heading-fix">{{ post.title | strip_html }}</h2>
+
+        {% if post.subtitle %}
+          <h3 class="post-subtitle contrast-fix">
+          {{ post.subtitle | strip_html }}
+          </h3>
+        {% endif %}
+      </a>
+
+      {% if thumbnail != "" %}
+      <div class="post-image post-image-small">
+        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+          <img src="{{ thumbnail | absolute_url }}" alt="Project thumbnail">
+        </a>
+      </div>
+      {% endif %}
+
+      {% unless site.feed_show_excerpt == false %}
+      {% if thumbnail != "" %}
+      <div class="post-image post-image-short">
+        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+          <img src="{{ thumbnail | absolute_url }}" alt="Project thumbnail">
+        </a>
+      </div>
+      {% endif %}
+
+      <div class="post-entry contrast-fix">
+        {{ post.caption}}
+      </div>
+      {% endunless %}
+
+    </article>
+  </li>
+  {% endfor %}
+</ul>

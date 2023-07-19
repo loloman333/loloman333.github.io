@@ -21,13 +21,13 @@
 url: https://lolo.place
 
 # Build settings
-#theme: beautiful-jekyll-theme
-remote_theme: daattali/beautiful-jekyll@5.0.0
+remote_theme: daattali/beautiful-jekyll@e1facea35a0a8ee81bc204db10039d5b53837a39
 plugins:
-#  - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -65,13 +65,18 @@ author: Lorenz Killer
 
 # --- Collections
 collections:
-  - projects
+  projects:
+    output: true
+    permalink: /:collection/:name
+  posts:
+    output: true
+    permalink: /:collection/:name
 
 # --- Navigation bar
 navbar-links:
-  Posts: "posts"
   Projects: "projects"
-  Contact: "contact"
+  About: "about"
+  Tags: "tags"
 
 # --- Logo
 # Image to show in the navigation bar - works best with a square image
@@ -85,12 +90,23 @@ round-avatar: true
 # then specify the following parameter
 # title-img: "/assets/img/lolo.png"
 
+
+contact-form-links:
+  email: mailto:contact@lolo.place
+  github: github.com/loloman333
+  youtube: youtube.com/lolomann25
+  reddit: reddit.com/u/loloman333
+  spotify: spotify.com/loloman333
+  # TODO: linked in
+  instagram: instagram.com/loloman333
+  minecraft: planetminecraft.com/loloman333
+
 # --- Footer social media links
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "lorenzkiller@lolo.place"
+  email: "contact@lolo.place"
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
   github: loloman333
@@ -99,7 +115,7 @@ social-network-links:
   youtube: lolomann25
 #  medium: yourname
   reddit: loloman333
-#  linkedin: daattali
+#  linkedin: daattali TODO
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -227,7 +243,7 @@ footer-hover-col: "#0085A1"
 #fb_comment_id: ""
 
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
-#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
+commentbox: "5765656414781440-proj" # Project ID, e.g. "5694267682979840-proj"
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,

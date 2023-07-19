@@ -1,5 +1,7 @@
 # Lolo's Place
 
-## TODO:
+# TODO:
 
-- tags.html from beautiful
+- Finish "About" Page
+- Implement Project tags
+- Add Projects
