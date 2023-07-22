@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to my page"
-date:   2023-04-02 18:44:04 +0200
+date:   2023-04-02 18:44
 last-updated: 2023-04-04 19:58
 tags: website
 ---

@@ -4,9 +4,11 @@ title: 'Texts'
 ---
 <!-- TODO all copied from layouts/home.html -->
 
+{% assign texts = site.posts | where_exp:"item","item.categories contains 'texts'" %}
+
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
-  {% for post in site.texts %}
+  {% for post in texts %}
   <li class="post-preview">
     <article>
 

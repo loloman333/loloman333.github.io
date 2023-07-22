@@ -1,7 +1,7 @@
 ---
 title: Katzenaugen
 date: 2023-07-19
-tags: poem german
+tags: gedicht
 ---
 
 Du reflektierst so wie ein Katzenauge <br>
