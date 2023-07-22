@@ -4,6 +4,7 @@ date: 2023-01-02
 featured: true
 bg-img: /assets/img/projects/q_learning/bg.png
 caption: "Cart Pole & TORCS"
+tags:  [Code, Python, Machine Learning]
 ---
 
 ### Q-Learning, what's that?

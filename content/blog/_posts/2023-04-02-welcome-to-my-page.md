@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to my page"
 date:   2023-04-02 18:44
 last-updated: 2023-04-04 19:58
-tags: website
+tags: Website
 ---
 # Looks like I finally have a website to call my own!
 
