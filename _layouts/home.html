@@ -4,8 +4,7 @@ layout: page
 
 {{ content }}
 
-{% assign posts = paginator.posts | default: site.posts %}
-{% assign posts = posts | where_exp:"item","item.categories contains 'blog'" %} <!-- THIS FILE IS OVERWRITTEN FROM THE TEMPLATE, THIS LKINE IS THE ONLY CHANGED ONE-->
+{% assign posts = site.posts | where_exp:"item","item.categories contains 'blog'" %} <!-- THIS FILE IS OVERWRITTEN FROM THE TEMPLATE, THIS LKINE IS THE ONLY CHANGED ONE-->
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
@@ -98,7 +97,8 @@ layout: page
   {% endfor %}
 </ul>
 
-{% if paginator.total_pages > 1 %}
+<!-- REMOVED PAGINATOR STUFF HERE -->
+<!-- {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
   {% if paginator.previous_page %}
   <li class="page-item previous">
@@ -111,4 +111,4 @@ layout: page
   </li>
   {% endif %}
 </ul>
-{% endif %}
+{% endif %} -->
