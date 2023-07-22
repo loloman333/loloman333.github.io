@@ -2,9 +2,9 @@
 
 # TODO:
 
-- Finish "About" Page
-- Implement Project tags
 - Add Projects
+- Refactoring ???
+- "Fix" next and previous post buttons 
 
 # Dev Environment
 
