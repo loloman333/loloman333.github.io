@@ -4,7 +4,11 @@ layout: page
 
 {{ content }}
 
+{{site.posts | size}}
+
 {% assign posts = site.posts | where_exp:"item","item.categories contains 'blog'" %} <!-- THIS FILE IS OVERWRITTEN FROM THE TEMPLATE, THIS LKINE IS THE ONLY CHANGED ONE-->
+
+{{posts | size}}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
