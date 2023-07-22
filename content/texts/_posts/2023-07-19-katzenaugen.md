@@ -1,7 +1,7 @@
 ---
 title: Katzenaugen
 date: 2023-07-19
-tags: Gedicht
+tags: Poetry German
 ---
 
 Du reflektierst so wie ein Katzenauge <br>
@@ -48,5 +48,3 @@ Dann löst du dich von allem <br>
 Bis dir nichts mehr bleibt als fallen <br>
 Zum Schluss wirst du’s verstehen <br>
 Zum Glücklichsein bleib stehen <br>
-
-{:.verse}
