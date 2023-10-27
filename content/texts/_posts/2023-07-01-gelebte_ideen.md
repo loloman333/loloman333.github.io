@@ -1,6 +1,6 @@
 ---
 title: Gelebte Ideen
-date: 2023-07-2
+date: 2023-07-01
 tags: Poetry German
 ---
 
