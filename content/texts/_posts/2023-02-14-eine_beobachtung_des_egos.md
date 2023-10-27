@@ -1,6 +1,6 @@
 ---
 title: Eine Beobachtung des Egos
-date: 2023-07-22
+date: 2023-01
 tags: Meta German
 ---
 
