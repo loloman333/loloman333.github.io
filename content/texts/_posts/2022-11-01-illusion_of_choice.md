@@ -1,6 +1,6 @@
 ---
 title: Illusion of Choice
-date: 2023-07-22
+date: 2022-11-01
 tags: Poetry English
 ---
 
