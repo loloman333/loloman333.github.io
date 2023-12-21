@@ -18,7 +18,7 @@ vom Urteil anderer fern <br>
 Beginnt des Lebens Komik <br>
 zu leuchten wie ein Stern <br>
 
-Beginnt der Liebe Nachsicht <br>
+Beginnt die blanke Neugier <br>
 auch andere zu verleiten <br>
 Zu lösen ihrer Ängste <br>
 neue Wege zu bestreiten <br>
