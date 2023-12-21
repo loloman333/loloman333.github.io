@@ -4,7 +4,7 @@ date: 2023-07-19
 tags: Poetry German
 ---
 
-Du reflektierst so wie ein Katzenauge <br>
+Du reflektierst wie ein Katzenauge <br>
 Drehst dich auch so im Kreis <br>
 Legst alles dran zu wachsen <br>
 Bleibst dennoch klein wie Reis <br>
@@ -27,7 +27,7 @@ Weil du dich selber damit quälst <br>
 “Wie”, hörst du dich sagen <br>
 “Soll man denn jemals glücklich sein?” <br>
 So viel zu optimieren <br>
-Wirst niemals fetig, Nein <br>
+Wirst niemals fertig, Nein <br>
 
 Trotz all der ganzen Klugheit <br>
 Fehlt dir noch immer eins <br>
