@@ -1,23 +1,24 @@
 ---
 title: The play goes on
 date: 2020-05-09
+last-updated: 2024-02-14
 tags: Poetry English
 ---
 
 Some time, an actor will die <br>
 Fast and cruel or slow and peaceful <br>
 Public and loud or private and quiet <br>
-Once you realize, there is no return <br>
+Once it is done, there is no return <br>
 
 The whole play will be senseless <br>
 Boring, sad and dull <br>
 Too dramatic, hasty and cheerful <br>
-But time will pass and you will cope <br>
+Then time will pass and so will the grief <br>
 
-You will look for replacement <br>
+The search for replacement begins <br>
 Too small and too large <br>
 Too much and not enough <br>
-You will find nothing that fits <br>
+Nothing fitting will be found <br>
 
 The play will never be the same <br>
 But it may be good again <br>
