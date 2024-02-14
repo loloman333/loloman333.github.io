@@ -1,5 +1,5 @@
 ---
-title: The play will go on
+title: The play goes on
 date: 2020-05-09
 tags: Poetry English
 ---
