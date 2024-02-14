@@ -6,7 +6,7 @@ tags: Meta English
 ---
 
 One is always alone in their feelings <br>
-Noone can feel what another one does <br>
+No one can feel what another one does <br>
 
 Sharing the feeling is to flatten it <br>
 It’s to reduce the scope, to remove dimensions <br>
