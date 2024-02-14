@@ -4,7 +4,7 @@ date: 2022-11-01
 tags: Poetry English
 ---
 
-When looking forth there're crossings <br>
+When looking forth there are crossings <br>
 And ways that turn and bow <br>
 You see so many options <br>
 And need to take one now <br>
