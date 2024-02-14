@@ -1,6 +1,7 @@
 ---
-title: A single pea on a plate
+title: A pea on a plate
 date: 2023-01-01
+last-updated: 2024-02-14
 tags: Meta English
 ---
 
