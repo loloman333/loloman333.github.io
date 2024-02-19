@@ -5,7 +5,7 @@ tags: Poetry English
 ---
 
 Whatever you'll be doing <br>
-Whereever you will go <br>
+Wherever you will go <br>
 
 You always will be blooming <br>
 You're always gonna grow <br>
