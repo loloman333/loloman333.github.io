@@ -13,7 +13,7 @@ liegt ja so viel in der Idee <br>
 Und doch erschließt sich dem Bewusstsein <br>
 oft einzig dieser grobe Weg <br>
 
-Nur Gelöst vom eigenen Zweifeln <br>
+Nur gelöst vom eigenen Zweifeln <br>
 vom Urteil anderer fern <br>
 Beginnt des Lebens Komik <br>
 zu leuchten wie ein Stern <br>
