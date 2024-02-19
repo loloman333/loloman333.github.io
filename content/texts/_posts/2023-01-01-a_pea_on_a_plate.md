@@ -11,7 +11,7 @@ No one can feel what another one does <br>
 Sharing the feeling is to flatten it <br>
 It’s to reduce the scope, to remove dimensions <br>
 
-Even worse, by sharing the feeling one’s changing it <br>
+Even more, by sharing the feeling one’s changing it <br>
 One tries to adapt it to another one's view <br>
 
 Not only the representation will be merely a pitiful copy <br>
