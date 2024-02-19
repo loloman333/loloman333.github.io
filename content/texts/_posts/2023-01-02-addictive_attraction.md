@@ -1,7 +1,7 @@
 ---
 title: Addictive Attraction
 date: 2023-01-02
-last-edited: 2024-02-19
+last-updated: 2024-02-19
 tags: Fiction English
 ---
 
