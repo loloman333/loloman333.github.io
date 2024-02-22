@@ -2,7 +2,7 @@
 title: "Minecraft Datapacks"
 date: 2019-05-16
 featured: true
-bg-img: /assets/img/projects/q_learning/bg.png
+bg-img: /assets/img/projects/minecraft-datapacks/banner.png
 caption: "Chess and Pathfinding"
 tags:  [Minecraft, Code, Chess, Pathfinding]
 ---
