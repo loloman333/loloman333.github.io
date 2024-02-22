@@ -25,22 +25,38 @@ Using a datapack made it a lot easier to implement and share with others and pro
 But enough of this, what's the deal?
 
 ### [Chesscraft](https://www.planetminecraft.com/data-pack/chesscraft-chess-in-minecraft/)
-![Chesscraft](/assets/img/projects/minecraft_datapacks/chesscraft.png)
+
 It's chess. In Minecraft.
 The pieces are all different minecraft mobs that I found fitting for the roles. 
-To move a piece you have to apply damage to a it for example by hitting it or shooting it with a bow.
-It will them create projections of itself on all valid squares and hitting one of the projections logs in the move.
+To move a piece you have to apply damage to it for example by hitting it or shooting it with a bow.
+It will them create projections of itself on all valid squares. Hitting one of the projections logs in the move.
 
-While the game will make sure white and black always take turns moving, there is no check for which player actually makes a move.
+![Chess in Minecraft](/assets/img/projects/minecraft_datapacks/chesscraft.png)
+
+While the game will make sure that white and black always take turns moving, there is no check for which player actually makes a move.
 The game also doesn't handle check or checkmate and there is no en passant and no pawn promotion.
-Implementing those would have been too much work for me back when I first uploaded this datapack (This was around my highschool finals 😧) and then I never picked it up again.
+Implementing al these features would have been too much work for me back when I first uploaded this datapack (This was around my highschool finals 😧) and then I never picked it up again.
 
 Maybe one day when I feel particulary bored I will make a little remastered edition, who knows.
 Probably not though, when I take a look at the "code" now I get dizzy since it's not very funny business to implement proper control flow with `.mcfunction` files.
 To do so you either have to include the condition in every command or have one seperate file for every branch of the condition.
 
-I think it still can be fun to play a round of chess like with it in Minecraft.
+I think it still can be fun to play a roun.d of chess like with it in Minecraft.
 If you want to try it out or look through the files head over to [planetminecraft](https://www.planetminecraft.com/data-pack/chesscraft-chess-in-minecraft/) to download it! 💚
 
 ### [Pathfinding](https://www.planetminecraft.com/data-pack/pathfinding-4547841/)
-TODO
+
+This datapack is even nerdier 🤓.
+I implemented two dimensional pathfinding. One can set the start and the end node of the path, choose an algorithm along with some other settings and then let the search begin!
+In the background I execute the desired algorithm by spawning a bunch of entities, one for each block that is searched on until the end marker is found.
+
+Depending on the setting the entities will either be armor stands for visualization or invisible area effect clouds for performance. 
+I included Dijkstras Algorithm, Best First Search and A-Star once with manhattan and once with euclidean distance measurement. 
+If all this makes no sense to you but you are interested in the topic i can recommend [this source](https://clementmihailescu.github.io/Pathfinding-Visualizer/).
+
+![Pathfinding in Minecraft: Best First](/assets/img/projects/minecraft_datapacks/pathfinding_best_first.png) ![Pathfinding in Minecraft: A*](/assets/img/projects/minecraft_datapacks/pathfinding_a_star.png)
+
+All together this was very enjoyable to implement compared to Chesscraft.
+To make it maybe a bit more useful or at least fun I also included the options to let a chicken follow the path once it is found 🐔.
+
+Again if you want to give it a try out browse the files head over to feel free to head over to [planetminecraft](https://www.planetminecraft.com/data-pack/pathfinding-4547841/)! 💚
