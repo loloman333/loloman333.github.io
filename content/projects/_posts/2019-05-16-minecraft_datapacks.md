@@ -25,7 +25,7 @@ Using a datapack made it a lot easier to implement and share with others and pro
 But enough of this, what's the deal?
 
 ### [Chesscraft](https://www.planetminecraft.com/data-pack/chesscraft-chess-in-minecraft/)
-![Chesscraft](assets/img/projects/minecraft_datapacks/chesscraft.png)
+![Chesscraft](/assets/img/projects/minecraft_datapacks/chesscraft.png)
 It's chess. In Minecraft.
 The pieces are all different minecraft mobs that I found fitting for the roles. 
 To move a piece you have to apply damage to a it for example by hitting it or shooting it with a bow.
