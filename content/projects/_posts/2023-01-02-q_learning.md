@@ -8,7 +8,10 @@ tags:  [Code, Python, Machine Learning]
 ---
 
 ### Q-Learning, what's that?
+
 Well to make it short it's a very simple method of reinforcement learning, which again is a whole category of machine learning methods based on the idea of rewarding desired behaviour of an agent and/or punishing undesired one to make it learn.
+
+![Reinforcement Learning](/assets/img/projects/q_learning/bg.png)
 
 Still too abstract? I made a [series of three short videos](https://youtube.com/playlist?list=PLQjdzNIQ02PC2lrqGmNFA2jpRazE82PM7) for university, explaining reinforcement learning and later Q-Learning in more detail. ~~Alternatively you could just search it on the web, there are probably better explanations.~~
 
