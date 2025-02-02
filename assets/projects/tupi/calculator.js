@@ -233,18 +233,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let requirements = getRequirements();
 
-        // Test requirements
-        requirements = [
-            {
-                type: RequirementTypes.SAME_RANK,
-                numbers: [2, 2, 4],
-                rank: Ranks.ANY,
-                suit: null,
-                color: null
-            }          
-        ];
-        finalHandSize = 8;
-
         // Merge same requirements      
         for (let i = 0; i < requirements.length; i++) {
             for (let j = i + 1; j < requirements.length; j++) {

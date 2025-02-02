@@ -2,7 +2,7 @@
 title: "Minecraft Datapacks"
 date: 2019-05-16
 featured: true
-bg-img: /assets/img/projects/minecraft_datapacks/banner.png
+bg-img: /assets/projects/minecraft_datapacks/banner.png
 caption: "Chess and Pathfinding"
 tags:  [Minecraft, Code, Chess, Pathfinding]
 ---
@@ -31,7 +31,7 @@ The pieces are all different minecraft mobs that I found fitting for the roles.
 To move a piece you have to apply damage to it for example by hitting it or shooting it with a bow.
 It will them create projections of itself on all valid squares. Hitting one of the projections logs in the move.
 
-![Chess in Minecraft](/assets/img/projects/minecraft_datapacks/chesscraft.png)
+![Chess in Minecraft](/assets/projects/minecraft_datapacks/chesscraft.png)
 
 While the game will make sure that white and black always take turns moving, there is no check for which player actually makes a move.
 The game also doesn't handle check or checkmate and there is no en passant and no pawn promotion.
@@ -54,7 +54,7 @@ Depending on the setting the entities will either be armor stands for visualizat
 I included Dijkstras Algorithm, Best First Search and A-Star once with manhattan and once with euclidean distance measurement. 
 If all this makes no sense to you but you are interested in the topic i can recommend [this source](https://clementmihailescu.github.io/Pathfinding-Visualizer/).
 
-![Pathfinding in Minecraft: Best First](/assets/img/projects/minecraft_datapacks/pathfinding_best_first.png) ![Pathfinding in Minecraft: A*](/assets/img/projects/minecraft_datapacks/pathfinding_a_star.png)
+![Pathfinding in Minecraft: Best First](/assets/projects/minecraft_datapacks/pathfinding_best_first.png) ![Pathfinding in Minecraft: A*](/assets/projects/minecraft_datapacks/pathfinding_a_star.png)
 
 All together this was very enjoyable to implement compared to Chesscraft.
 To make it maybe a bit more useful or at least fun I also included the options to let a chicken follow the path once it is found 🐔.
