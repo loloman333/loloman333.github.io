@@ -10,27 +10,26 @@ title: 'Projects'
 
 <div class="projects-grid" role="list">
   {% for post in projects %}
-  <div class="post-preview" style="--bg-var: url({{ post.bg-img }});" role="listitem">
-    <div class="post-preview-image" aria-hidden="true"></div>
-    <a class="post-preview-link" href="{{ post.url | relative_url }}" aria-label="Open {{ post.title | strip_html }}"></a>
-    <div class="post-preview-content">
-      <h2 class="post-title contrast-fix heading-fix">{{ post.title | strip_html }}</h2>
-      <div class="post-entry contrast-fix">
+  <div class="project-card" role="listitem">
+    <a class="project-card-main" href="{{ post.url | relative_url }}">
+      <img class="project-card-image" src="{{ post.bg-img | relative_url }}" alt="{{ post.title | strip_html }} cover image">
+      <div class="project-card-body">
+        <h2 class="project-card-title">{{ post.title | strip_html }}</h2>
+        <div class="project-card-description">
         {{ post.caption }}
+        </div>
       </div>
+    </a>
 
       {% if site.feed_show_tags != false and post.tags.size > 0 %}
-      <div class="blog-tags contrast-fix">
-        <div class="project-tags-list" role="list">
+      <div class="project-card-tags" role="list" aria-label="Project tags">
           {% for tag in post.tags %}
-          <div class="project-tag" role="listitem">
+          <div class="project-card-tag" role="listitem">
             <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           </div>
           {% endfor %}
-        </div>
       </div>
       {% endif %}
-    </div>
   </div>
   {% endfor %}
 </div>
