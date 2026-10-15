@@ -79,10 +79,11 @@ No Node.js installation is required. Run `bundle exec` for Jekyll commands so th
 ## TODOs (for me)
 - refactor the landing page
 - refactor the about page
-- fix typos in minecraft datapack post
-- merge assets and content folders ?
 - more projects
 	- tupi and card hand chance calculator
 		- move calculator.html to content?
 	- Boston Dynamics Spot project
 	- More university and school projects
+		- check ibrahima and samanthas portfolios for what they included
+		- check my github for other projects
+- merge assets and content folders ?

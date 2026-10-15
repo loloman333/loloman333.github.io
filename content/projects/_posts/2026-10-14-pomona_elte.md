@@ -3,16 +3,33 @@ title: "Autonomous Parking Surveillance Rover"
 date: 2026-10-14
 featured: true
 bg-img: /assets/projects/pomona_elte/pomona-photo.jpg
-caption: "Autonomous parking surveillance with Pomona"
-tags: [Robotics, ROS, Computer Vision, Navigation]
+caption: "
+    Full stack ROS parking surveillance system deployed on an AgileX Scout 2.0 rover <br>
+    **Software:** ROS, C++, Python, Extended Kalman Filter, KISS-ICP, YOLO, OCR, OctoMap <br>
+    **Hardware:** AgileX Scout 2.0, NVIDIA Jetson Xavier, Velodyne LiDAR, Intel RealSense RGB-D camera, Xsens IMU and GNSS
+    "
+external-links:
+    GitHub: https://github.com/IFRoS-ELTE/SLAM-Parking-Inspector
+tags: [Robotics, ROS, C++, Python, University]
 ---
 
 ## Autonomous Parking Surveillance Rover
 
-As part of the IFROS Lab at ELTE University, our team developed an autonomous parking surveillance application for **Pomona**, an AgileX Scout 2.0 rover. The system combines localization, navigation, perception, and mapping into a complete robotics stack deployed on a physical platform.
+![Pomona with a parking lot in the background](/assets/projects/pomona_elte/pomona-photo.jpg)
 
-The rover builds an occupancy map of its environment, navigates through a parking area while avoiding dynamic obstacles, and detects vehicles and license plates with its onboard RGB-D camera. Detected license plates are localized in 3D and visualized alongside the environment map.
+As part of a hands-on university project at ELTE University, I developed an autonomous parking surveillance application for **Pomona**, an AgileX Scout 2.0 rover together with a team of three other students. The system combines localization, navigation, perception, and mapping into a complete robotics stack deployed on a physical platform.
 
+![GIF Demo](/assets/projects/pomona_elte/showcase.gif)
+
+The rover builds an occupancy map of its environment and detects vehicles and license plates with its onboard RGB-D camera. Detected license plates are localized and visualized alongside the environment map.
+
+### Hardware
+
+![AgileX Scout 2.0 Rover](/assets/projects/pomona_elte/pomona-render.jpg)
+
+The robotic platform we used is the [AgileX Scout 2.0](https://global.agilex.ai/products/scout-2-0), a versatile mobile base designed for research and development. It features a differential drive system more than capable of navigating outdoor parking lots. The rover is equipped with a Velodyne LiDAR, an Intel RealSense RGB-D camera, and an Xsens IMU and GNSS module. The onboard NVIDIA Jetson Xavier provides the necessary computational power for real-time processing of sensor data.
+
+### System Architecture
 
 ```mermaid
 ---
@@ -79,23 +96,15 @@ An Extended Kalman Filter fuses wheel odometry, IMU data, GNSS, and LiDAR odomet
 
 ### Navigation and Mapping
 
-The navigation stack uses [OctoMap](https://octomap.github.io/) to represent obstacles and a custom Python implementation of RRT* to plan collision-free paths. A controller converts the planned trajectory into movement commands, while dynamic obstacle avoidance supports operation in changing environments.
-
-The resulting occupancy map is augmented with estimated positions of detected vehicles and license plates, providing a spatial overview of the parking area.
+The navigation stack uses [OctoMap](https://octomap.github.io/) to represent obstacles and a custom Python implementation of RRT* to plan collision-free paths. A controller converts the planned trajectory into movement commands, while dynamic obstacle avoidance supports operation in changing environments. The resulting occupancy map is displayed with estimated positions of license plates, providing a spatial overview of the parking area.
 
 ### Perception
 
 Two YOLO-based detection models identify cars and license plates in the camera feed. Optical character recognition extracts the plate text, and the RGB-D data is combined with the robot pose to estimate the 3D position of each detection. An annotated camera stream is published for visualization.
 
-### Technology
-
-- **Software:** ROS, C++, Python, Extended Kalman Filter, KISS-ICP, YOLO, OCR, OctoMap
-- **Hardware:** [AgileX Scout 2.0](https://global.agilex.ai/products/scout-2-0), NVIDIA Jetson Xavier, Velodyne LiDAR, Intel RealSense RGB-D camera, Xsens IMU and GNSS
-- **Team:** Samantha Caballero, Raul Musito, Lorenz Killer, Priyam Gupta
+### Outcome
 
 For the source code and project details, visit the [SLAM Parking Inspector repository](https://github.com/IFRoS-ELTE/SLAM-Parking-Inspector).
-
-### Demonstrations
 
 #### Indoor Localization and Mapping Example
 
