@@ -23,6 +23,9 @@ url: https://lolo.place
 # Build settings
 #remote_theme: daattali/beautiful-jekyll@e1facea35a0a8ee81bc204db10039d5b53837a39 # I can't quite remember why, but I decided to use some specific commit
 remote_theme: daattali/beautiful-jekyll@6.0.1
+source: .
+layouts_dir: src/_layouts
+includes_dir: src/_includes
 plugins:
   - jekyll-remote-theme
 #  - jekyll-paginate
@@ -206,12 +209,12 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/src/css/overrides.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
-#  - "/assets/js/custom-script.js"
+site-js:
+ - "/src/js/main.js"
 
 
 #################################

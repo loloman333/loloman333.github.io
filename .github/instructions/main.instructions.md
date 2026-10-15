@@ -7,9 +7,9 @@ applyTo: "**/*"
 
 This repository is a personal website built with Jekyll and GitHub Pages. It uses the Beautiful Jekyll remote theme (`daattali/beautiful-jekyll@6.0.1`) and plugins configured in `_config.yml`.
 
-- Root HTML files are standalone pages such as `about.html`, `projects.html`, `texts.html`, and `tags.html`.
+- Page structure lives under `src/`, with standalone pages such as `src/about.html`, `src/projects.html`, `src/texts.html`, and `src/tags.html`.
 - Blog, project, and text content lives under `content/*/_posts/`.
-- `_layouts/home.html` contains the custom home feed logic; `_includes/` contains reusable Liquid/HTML fragments.
+- `src/_layouts/home.html` contains the custom home feed logic; `src/_includes/` contains reusable Liquid/HTML fragments.
 - Site-specific assets live under `assets/`; interactive project code may use colocated CSS and JavaScript files.
 - The canonical site URL is `https://lolo.place`.
 
