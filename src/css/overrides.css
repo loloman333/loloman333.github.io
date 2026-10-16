@@ -1,1 +1,21 @@
-/* If there are any custom CSS rules you want to apply to your site, you can add them here. This file is included in every page on your site and overrides the default beautiful jekyll styles. */
+---
+layout: null
+---
+
+:root {
+  --link-color: {{ site['link-col'] }};
+}
+
+summary {
+  text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+
+    img {
+        max-height: 25em;
+        width: auto;
+        align-self: end;
+    }
+
+}

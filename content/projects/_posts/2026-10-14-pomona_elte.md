@@ -10,7 +10,7 @@ caption: "
     "
 external-links:
     GitHub: https://github.com/IFRoS-ELTE/SLAM-Parking-Inspector
-tags: [Robotics, ROS, C++, Python, University]
+tags: [Robotics, ROS, C++, Python]
 ---
 
 ## Autonomous Parking Surveillance Rover

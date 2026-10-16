@@ -3,7 +3,9 @@ title: "Minecraft Datapacks"
 date: 2019-05-16
 featured: true
 bg-img: /assets/projects/minecraft_datapacks/banner.png
-caption: "Chess and Pathfinding"
+caption: "
+    Two Minecraft datapacks that enhance the game without the need for mods. One implements chess in Minecraft, the other educational pathfinding algorithms.
+    "
 external-links:
   Planet Minecraft: https://www.planetminecraft.com/member/loloman333/
 tags:  [Minecraft, Code, Chess, Pathfinding]

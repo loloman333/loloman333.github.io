@@ -3,7 +3,9 @@ title: "Q-Learning Implementation"
 date: 2023-01-02
 featured: true
 bg-img: /assets/projects/q_learning/bg.png
-caption: "Cart Pole & TORCS"
+caption: "
+    A video series of Q-Learning tutorials as well as an implementation applied to the Cart Pole Balancing Problem and the Open Race Car Simulator (TORCS)
+    "
 external-links:
   YouTube: https://youtube.com/playlist?list=PLQjdzNIQ02PC2lrqGmNFA2jpRazE82PM7
   GitHub: https://github.com/loloman333/Cart-Pole-Q-Learning
