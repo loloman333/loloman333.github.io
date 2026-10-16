@@ -10,6 +10,36 @@ summary {
   text-decoration: underline;
 }
 
+.project-card-external-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-card-external-link a {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--link-color);
+  border-radius: 0.35rem;
+  color: var(--link-color);
+  font-size: 0.9rem;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.project-card-external-link a:hover,
+.project-card-external-link a:focus-visible {
+  border-color: var(--link-color);
+  background: rgba(64, 64, 64, 0.09);
+  color: inherit;
+}
+
+.before-content > .project-card-external-links {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 1200px) {
 
     img {

@@ -80,10 +80,10 @@ No Node.js installation is required. Run `bundle exec` for Jekyll commands so th
 - refactor the landing page
 - refactor the about page
 - more projects
+	- lka - cleanup
+	- More university and school projects
+		- check ibrahims and samanthas portfolios for what they included
+		- check my github for other projects
 	- tupi and card hand chance calculator
 		- move calculator.html to content?
-	- Boston Dynamics Spot project
-	- More university and school projects
-		- check ibrahima and samanthas portfolios for what they included
-		- check my github for other projects
 - merge assets and content folders ?

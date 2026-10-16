@@ -322,6 +322,13 @@ kramdown:
 defaults:
   -
     scope:
+      path: "content/projects/_posts"
+      type: "posts"
+    values:
+      before-content:
+        - project-external-links.html
+  -
+    scope:
       path: ""
       type: "posts"
     values:

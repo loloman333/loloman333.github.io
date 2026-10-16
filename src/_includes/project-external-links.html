@@ -1,0 +1,11 @@
+{% assign project = include.project | default: page %}
+
+{% if project['external-links'].size > 0 %}
+<div class="project-card-external-links" role="list" aria-label="External project links">
+  {% for external_link in project['external-links'] %}
+  <div class="project-card-external-link" role="listitem">
+    <a href="{{ external_link[1] }}" target="_blank" rel="noopener noreferrer">{{ external_link[0] }} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
